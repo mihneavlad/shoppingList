@@ -1,3 +1,4 @@
+const list = document.querySelector("#items");
 
 let addItem = document.querySelector("#shopping-list").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -6,8 +7,7 @@ let addItem = document.querySelector("#shopping-list").addEventListener("submit"
     let inputValue = event.target.querySelector("#input").value;
     let newLine = document.createTextNode(inputValue);
 
-    const list = document.querySelector("#items");
-
-    list.appendChild(newLine);
+    line.appendChild(newLine);
+    list.appendChild(line);
     // list.insertBefore(line, list.querySelector(":nth-child(1)"));
   });
