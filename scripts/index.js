@@ -16,7 +16,9 @@ let addItem = document.querySelector('#shopping-list').addEventListener('submit'
 	removeButton.appendChild(textOfTheButton);
 	line.appendChild(removeButton);
 
+
 	removeButton.classList.add('delete-btn');
+	line.classList.add('d-flex', 'justify-content-between');
 
 	removeButton.addEventListener('click', function(event) {
 		event.preventDefault();
